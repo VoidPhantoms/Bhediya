@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090014">
+  <title>Arnav.exe — Birthday Loading...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" class="loader-screen">
+    <div class="wolf-wrap" aria-label="Animated wolf">
+      <div class="wolf-aura"></div>
+      <div class="wolf">
+        <div class="ear e1"></div><div class="ear e2"></div>
+        <div class="wolf-head"><div class="eye left"></div><div class="eye right"></div><div class="snout"></div></div>
+        <div class="wolf-neck"></div>
+      </div>
+    </div>
+    <div class="loader-title">ARNAV PUTTAR<span>.EXE</span></div>
+    <div class="loader-sub">INITIALIZING BIRTHDAY CHAOS...</div>
+    <div class="loader-bar"><i></i></div>
+    <div class="loader-percent">0%</div>
+  </div>
+
+  <div class="cursor-glow"></div>
+  <canvas id="particles"></canvas>
+
+  <header class="nav">
+    <div class="brand"><span class="dot"></span> ARNAV PUTTAR<span class="muted">.EXE</span></div>
+    <button id="soundBtn" class="icon-btn" aria-label="Toggle sound">🔊</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="orb orb-a"></div><div class="orb orb-b"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">SYSTEM EVENT // 28.10.2026</p>
+        <h1>It's <span>Arnav Puttar's</span><br>birthday.</h1>
+        <p class="subtitle">A highly classified birthday experience.<br>Warning: excessive levels of Arnav may cause chaos.</p>
+        <div class="hero-actions">
+          <button class="primary" id="startBtn">START THE CHAOS <span>↗</span></button>
+          <a class="ghost" href="#memories">View evidence ↓</a>
+        </div>
+      </div>
+
+      <div class="hero-card-wrap reveal">
+        <div class="tilt-card hero-card">
+          <div class="scan"></div>
+          <img src="arnav-01.png" alt="Arnav wearing sunglasses">
+          <div class="card-overlay">
+            <span>SUBJECT: ARNAV PUTTAR</span>
+            <strong>+1 LEVEL UNLOCKED</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee">
+      <div>🎂 HAPPY BIRTHDAY ARNAV PUTTAR &nbsp; • &nbsp; MAIN CHARACTER ENERGY &nbsp; • &nbsp; BRAIN.EXE RESTARTING &nbsp; • &nbsp; 🎉</div>
+    </section>
+
+    <section class="section" id="roast">
+      <div class="section-head reveal">
+        <p class="eyebrow">01 // DIAGNOSTICS</p>
+        <h2>Birthday <span>roast</span> protocol.</h2>
+      </div>
+      <div class="stats">
+        <article class="glass reveal">
+          <span class="big">99%</span><h3>Confidence</h3><p>Evidence strongly suggests Arnav has absolutely no idea what's going on.</p>
+        </article>
+        <article class="glass reveal">
+          <span class="big">404</span><h3>Seriousness</h3><p>Serious Arnav could not be found. Try again after cake.</p>
+        </article>
+        <article class="glass reveal">
+          <span class="big">∞</span><h3>Bakchodi</h3><p>Unlimited mode detected. Server capacity exceeded.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section memory-section" id="memories">
+      <div class="section-head reveal">
+        <p class="eyebrow">02 // EVIDENCE FILES</p>
+        <h2>Proof that this man <span>exists.</span></h2>
+      </div>
+      <div class="gallery">
+        <figure class="photo-card tilt-card reveal">
+          <img src="arnav-01.png" alt="Arnav photo">
+          <figcaption><b>Exhibit A</b><span>Certified birthday legend 😎</span></figcaption>
+        </figure>
+        <figure class="photo-card tilt-card reveal tall">
+          <img src="arnav-02.jpg" alt="Arnav smiling">
+          <figcaption><b>Exhibit B</b><span>Smile.exe has entered overdrive 😂</span></figcaption>
+        </figure>
+      </div>
+      <p class="drop-note">More photos can be added to this gallery anytime.</p>
+    </section>
+
+    <section class="cake-section section">
+      <div class="cake-copy reveal">
+        <p class="eyebrow">03 // FINAL BOSS</p>
+        <h2>Make a wish.<br><span>Then blow the candles.</span></h2>
+        <p>Tap the cake to activate the birthday sequence. No actual cake was harmed during development.</p>
+        <button class="primary" id="cakeBtn">🎂 ACTIVATE CAKE</button>
+      </div>
+      <div class="cake-stage reveal" id="cakeStage">
+        <div class="cake">
+          <div class="candles"><i></i><i></i><i></i></div>
+          <div class="icing"></div>
+          <div class="cake-body"></div>
+          <div class="plate"></div>
+        </div>
+        <div class="cake-message" id="cakeMessage">TAP ME 👀</div>
+      </div>
+    </section>
+
+    <section class="final section" id="final">
+      <div class="final-inner reveal">
+        <div class="trophy">🏆</div>
+        <p class="eyebrow">MISSION COMPLETE</p>
+        <h2>HAPPY BIRTHDAY,<br><span>ARNAV PUTTAR!</span></h2>
+        <p>May your Wi-Fi be fast, your exams be easy, your screenshots never leak, and your cake be unnecessarily large. 🎂</p>
+        <button class="primary" id="confettiBtn">RELEASE THE CONFETTI 🎉</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>Made with questionable friendship, premium CSS & too much caffeine. © 2026</footer>
+  <script src="script.js"></script>
+</body>
+</html>
